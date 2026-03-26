@@ -1,0 +1,151 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — Pocket Shop</title>
+  <script type="text/javascript" src="../../miniweb/mds.js"></script>
+  <script type="text/javascript" src="../../miniweb/miniweb.js"></script>
+  <link rel="stylesheet" href="../../miniweb/libs/jquery/jquery-ui-1.14.1/jquery-ui.css">
+  <script type="text/javascript" src="../../miniweb/libs/jquery/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="../../miniweb/libs/jquery/jquery-ui-1.14.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="../../miniweb/fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Nav -->
+<div class="nav">
+  <div class="nav-brand">
+    <span class="icon">🛍</span>
+    <span>Pocket Shop</span>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Frequently Asked Questions</div>
+  <div class="section-sub">Common questions about Pocket Shop</div>
+
+  <div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <span>What's the difference between Pocket Shop and miniMerch?</span>
+        <span class="arrow">&#9662;</span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">
+        The biggest difference is distribution. Pocket Shop publishes to PocketWeb — your shop is broadcast to every node on the network, searchable by keyword, and accessible by address. No link sharing needed. <a href="https://minimerch.info">miniMerch</a> generates shop files that you need to share and distribute yourself. Beyond that, Pocket Shop is single-product and ultra-lightweight (under 50 KB), while miniMerch supports multiple products with a shopping cart.
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <span>What is Minima?</span>
+        <span class="arrow">&#9662;</span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">
+        Minima is a Layer-1 blockchain that runs completely on-device. Unlike other blockchains that require powerful servers, Minima nodes can run on phones, IoT devices, or desktop computers. This makes it perfect for truly decentralized applications like Pocket Shop.
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <span>Do I need to run a node 24/7?</span>
+        <span class="arrow">&#9662;</span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">
+        For selling: Yes, your node needs to be online to receive orders. However, Minima's mobile app runs efficiently in the background with minimal battery drain. For buying: No, you just need a node running when you place an order.
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <span>How does payment work?</span>
+        <span class="arrow">&#9662;</span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">
+        Customers pay with Minima or bridged USDT. The payment and an encrypted order are sent in a single on-chain transaction straight to your wallet address. No intermediary, no payment processor, no escrow.
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <span>Can I sell multiple products?</span>
+        <span class="arrow">&#9662;</span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">
+        Pocket Shop is designed for one product per shop. You can build multiple shops for different products — each one gets its own PocketWeb address and is independently searchable. If you need a multi-product store with a cart, check out <a href="https://minimerch.info">miniMerch</a>.
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <span>What does the buyer see?</span>
+        <span class="arrow">&#9662;</span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">
+        Buyers can find your shop by searching PocketWeb by keyword or navigating directly to your address. They see a clean, single-product page with your image, description, price, and a quantity selector. They enter their email, shipping address, and an optional message. Everything is encrypted before the transaction is sent.
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <span>How do I install Pocket Shop?</span>
+        <span class="arrow">&#9662;</span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">
+        Three options: (1) Download the Studio desktop app from <a href="https://github.com/eurobuddha/pocketShop/releases" target="_blank">GitHub Releases</a> for macOS or Windows. (2) Run <code>npm i -g pocketshop</code> and type <code>pocketshop</code>. (3) Clone the repo and run <code>npm run studio</code>.
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <span>What's the 50 KB limit?</span>
+        <span class="arrow">&#9662;</span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">
+        PocketWeb has a 50 KB file size limit. Pocket Shop is designed to stay well under this. Use SVG images for the smallest packages. Studio warns you if your build exceeds the limit and auto-resizes raster images.
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <span>How do I manage orders?</span>
+        <span class="arrow">&#9662;</span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">
+        Pocket Shop generates an mInbox MiniDapp alongside your shop. Install it on your node and orders appear automatically. You can update status (Paid/Preparing/Shipped), reply via ChainMail, and export orders to CSV.
+      </div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-banner">
+  <h2>Ready to sell?</h2>
+  <p>Download Pocket Shop Studio and deploy your shop in minutes</p>
+  <div class="btn-row">
+    <a href="https://github.com/eurobuddha/pocketShop/releases" target="_blank" class="btn btn-gold">Download Studio</a>
+    <a href="index.html" class="btn btn-outline">Back to Home</a>
+  </div>
+</div>
+
+<div class="footer">
+  <a href="https://minima.global" target="_blank">Minima</a>
+  <a href="https://docs.minima.global" target="_blank">Docs</a>
+  <a href="https://github.com/eurobuddha/pocketShop" target="_blank">GitHub</a>
+  <a href="https://minimerch.info">miniMerch</a>
+  <br><br>
+  Pocket Shop &copy; 2026 &middot; Built on Minima &middot; Published on PocketFS
+</div>
+
+<script type="text/javascript">
+  miniweb_Init();
+  MDS.init(function(msg) {});
+</script>
+
+</body>
+</html>
